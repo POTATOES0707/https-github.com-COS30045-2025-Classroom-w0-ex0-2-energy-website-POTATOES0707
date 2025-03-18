@@ -7,14 +7,17 @@
 <p><b>I have acknowledged the fact that I use GenAI assistance. </b><br>
 
 <fieldset>
-    <p>
-        function showCurrentPage() {
-            const currentPage = window.location.pathname.split('/').pop();
-            document.getElementById('currentPage').innerText = `You are currently on: ${currentPage}`;
-        }
-        window.onload = showCurrentPage;
-        //Showing users what page they are on
-    </p>
+<legend>Java Script Code</legend>
+    <pre>
+        <code>
+            function showCurrentPage() {
+                const currentPage = window.location.pathname.split('/').pop();
+                document.getElementById('currentPage').innerText = `You are currently on: ${currentPage}`;
+            }
+            window.onload = showCurrentPage;
+            //Showing users what page they are on
+        </code>
+    </pre>
 </fieldset>
 
 <br>
