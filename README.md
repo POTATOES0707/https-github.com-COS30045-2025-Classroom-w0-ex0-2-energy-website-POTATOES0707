@@ -7,7 +7,7 @@
 <p><b>I have acknowledged the fact that I use GenAI assistance. </b><br>
 
 <fieldset>
-<legend>Java Script Code</legend>
+<legend><i>Java Script Code</i></legend>
     <pre>
         <code>
             function showCurrentPage() {
