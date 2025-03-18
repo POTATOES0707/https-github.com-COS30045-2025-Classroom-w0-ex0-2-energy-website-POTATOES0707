@@ -55,7 +55,6 @@ ul li a:hover{
 h1{
     color: aliceblue;
     text-align: center;
-    color: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
 }
 
 fieldset{
