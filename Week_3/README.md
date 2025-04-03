@@ -16,7 +16,7 @@
 <p>
   This assignment does not require any complicated or complex coding to do since most of it is just paragraph writing and imgae uploading which are basic knowledge for anybody familiar with HTML, & CSS. With that being said, I admit that I also use AI to help me with this assignment, but mainly for decoration purposes, and not anything crucial. Below is some examples of me using AI for assistance: <br>
 
-<details>
+<pre>
    <div class="container">
                 <div class="row">
                     <div class="col-8 h-150">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
             </div>
-</details>
+</pre>
 
 - This part of the code creates a row with two column containing the image on the left column and the explanation on the right. While creating this row, the right column dropped down further than the left column and I could not figure out what the problem is until I asked AI for help. And this pattern of implementation style would repeat itself over and over again which is what made up my website. And beside this, everything is mostly the same since its an old code from week 0 aside from some <b>Bootstrp</b>, a CSS framework I recently learned from one of my classes (Interface Design).
 
