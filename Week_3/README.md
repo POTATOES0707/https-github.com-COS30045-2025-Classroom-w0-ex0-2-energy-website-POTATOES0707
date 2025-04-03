@@ -20,7 +20,7 @@
    <div class="container">
                 <div class="row">
                     <div class="col-8 h-150">
-                        <img src="q3.1.png" class="img-fluid rounded shadow-lg p-3 bg-body-tertiary rounded" alt="Common Screen Size">
+                        <img src="q3png" class="img-fluid rounded shadow-lg p-3 bg-body-tertiary rounded" alt="Common Screen Size">
                     </div>
 
                     <div class="col-4 bg-light h-150 rounded p-4 fs-5">
