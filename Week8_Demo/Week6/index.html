@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 6</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/visualization.css">
 </head>
 <body>
-    
+
+    <header>
+        <h1>TV Energy Consumption</h1>
+    </header>
+
+    <main>
+        <div>
+            <h1>Energy Consumption for different TV screen types and sizes</h1>
+            <p>TV's vary considerably in energy consumption.</p>
+
+            <div id="filter_screen">
+
+            </div>
+
+            <div id="histogram" class="responsive-svg-container">
+
+            </div>
+
+            <div class="body">
+                <h3>Data Source</h3>
+                <p>
+                    
+                </p>
+            </div>
+        </div>
+    </main>
+ 
+    <footer>
+        <p>&copy; 2025 Data visualization Week 6</p>
+    </footer>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="histogram.js"></script>
+    <script src="interaction.js"></script>
+    <script src="load_data.js"></script>
+    <script src="shared_constant.js"></script>
 </body>
 </html>
