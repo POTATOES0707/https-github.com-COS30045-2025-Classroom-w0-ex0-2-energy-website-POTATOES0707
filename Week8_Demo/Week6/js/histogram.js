@@ -37,30 +37,23 @@ innerChart
     .attr("stroke-width", 2); //Set the stroke width of the rectangles
 
 const bottomAxis = d3.axisBottom(xScale) //Create the x axis
-
-innerChart 
-.append("g")
-.attr("transform", `translate(0, ${innerheight})`) //Move the x axis to the bottom of the chart
-.call(bottomAxis) //Call the x axis
-
-svg
-    .append("g")
-    .text("Labelled Energy Consumption (kWh/year)")
-    .attr("text-anchor", "end")
-    .attr("x", width - 20)
-    .attr("y", height - 5)
-    .attr("class", "axis-label");
+innerChart.append("g")
+.attr("transform", `translate(0, ${innerheight})`)
+.call(bottomAxis);
+innerChart.append("text")
+.attr("x", innerwidth)
+.attr("y", innerheight + 40)
+.attr("text-anchor", "end")
+.attr("class", "axis-label")
+.text("Labelled Energy Consumption (kWh/year)");
 
 const leftAxis = d3.axisLeft(yScale) //Create the y axis
-
-innerChart 
-.append("g")
-.call(leftAxis) //Call the y axis
-
-svg
-    .append("g")
-    .text("Frequency")
-    .attr("x", 30)
-    .attr("y", 20)
+innerChart.append("g").call(leftAxis);
+innerChart.append("text")
+    .attr("transform", "rotate(-90)")
+    .attr("y", -50)
+    .attr("x", -10)
+    .attr("text-anchor", "end")
     .attr("class", "axis-label")
+    .text("Frequency");
 }
