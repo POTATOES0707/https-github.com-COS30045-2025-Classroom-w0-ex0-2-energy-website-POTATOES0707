@@ -8,10 +8,17 @@ const innerheight = height - margin.top - margin.bottom;
 const barColor = "#606464";
 const bodyBackgroundColor = "#fffaf0";
 
+let innerChartS;
+
+const tooltipWidth = 65;
+const tooltipHeight =32;
+
 const binGenerator = d3.bin()
 .value(d => d.energyConsumption);
 
-const xScale = d3.scaleLinear()
-const yScale = d3.scaleLinear()
-
+const xScale = d3.scaleLinear();
+const yScale = d3.scaleLinear();
+const xScales = d3.scaleLinear();
+const yScales = d3.scaleLinear();
+const colorScale = d3.scaleOrdinal();
 
