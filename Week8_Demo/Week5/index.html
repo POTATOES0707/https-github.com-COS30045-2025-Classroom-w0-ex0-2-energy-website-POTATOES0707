@@ -3,42 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 5</title>
-    
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <title>D3 Dashboard: TV Power Consumption</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .chart-container {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .chart-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .chart-description {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+    </style>
 </head>
-<body class="bg-secondary">
-    <div class=" bg-success w-100 text-white text-center p-3 mb-3">
-        <h1>D3 Chart Dashboards</h1>
-        <h2>TV Power Consumption</h2>
-    </div>
-    
-    <div class="responsive-svg-container bg-primary-secondary">
-        <div class="row bg-light m-4">
-            <div id="scatterPlot">
+<body>
+    <header class="bg-dark text-white text-center py-4 mb-4">
+        <h1 class="mb-0">TV Power Consumption Dashboard</h1>
+        <p class="lead">Visualizing Energy Use and Price Trends in TVs</p>
+    </header>
 
-            </div>
-        </div>
+    <main class="container">
+        <section class="chart-container">
+            <div class="chart-title">Star Rating vs Energy Consumption</div>
+            <div class="chart-description">This scatter plot shows the relationship between the energy efficiency star rating of TVs and their actual energy consumption. TVs with higher star 
+                ratings tend to consume less energy annually.</div>
+            <div id="scatterPlot"></div>
+        </section>
 
-        <div class="row bg-light m-4">
-            <div id="line">
+        <section class="chart-container">
+            <div class="chart-title">Electricity Spot Prices Over Time</div>
+            <div class="chart-description">This line chart presents average spot electricity prices in Australia over a series of years. It helps understand cost trends that influence TV 
+                operation expenses.</div>
+            <div id="line"></div>
+        </section>
 
-            </div>
-        </div>
+        <section class="chart-container">
+            <div class="chart-title">Mean Energy Consumption by Screen Technology</div>
+            <div class="chart-description">This bar chart compares the average energy consumption of TVs based on their screen technology. It highlights which technologies are more energy-
+                efficient on average.</div>
+            <div id="bar"></div>
+        </section>
 
-        <div class="row bg-light m-4">
-            <div id="bar">
+        <section class="chart-container">
+            <div class="chart-title">Energy Consumption Share by Screen Type</div>
+            <div class="chart-description">This donut chart illustrates the proportion of total energy use attributed to each screen type, providing a comparative view of their energy impact.</div>
+            <div id="donut"></div>
+        </section>
+    </main>
 
-            </div>
-        </div>
-
-        <div class="row bg-light m-4">
-            <div id="donut">
-
-            </div>
-        </div>
-    </div>
     <script src="https://d3js.org/d3.v7.min.js"></script>
     <script src="energyConsumptionD3.js"></script>
     <script src="priceD3.js"></script>
