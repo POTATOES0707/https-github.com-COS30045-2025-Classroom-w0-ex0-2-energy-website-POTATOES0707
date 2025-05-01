@@ -1,5 +1,5 @@
 <h1>GenAI Acknoledgement</h1>
-<p>I hereby declared that GenAI was used to better help me complete my assignments. <br>
+<p>I hereby declared that GenAI was used to better help me complete my assignments. <br><br>
 
 I hereby declare that Generative AI (GenAI) tools were used to assist in the completion of my assignments. These tools were utilized for purposes such as idea generation, code refinement, explanation of complex concepts, and improving the clarity and structure of written content. <br><br>
 
